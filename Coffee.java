@@ -32,7 +32,7 @@ class Coffee {
                 System.out.println("That's too much coffee!!");
             }
             /*
-            code for chapter 3b ifelse
+            code for chapter 3b if else
              */
             if (cups <= borderlineAddict) {
                 int headroom = borderlineAddict - cups;
