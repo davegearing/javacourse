@@ -49,7 +49,7 @@ class Coffee {
                     System.out.println("Your coffee consumption is ok");
                 }
                 else{
-                        System.out.println("Your coffee consumption is NOT ok");
+                    System.out.println("Your coffee consumption is NOT ok");
                     }
                 }
             }
