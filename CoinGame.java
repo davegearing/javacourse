@@ -19,6 +19,7 @@ public class CoinGame {
         int onePnd = 100;
         int total;
         int difference;
+        int targetTotal = 100;
 
         /*
         ask the user how many of each coin type they have
@@ -57,11 +58,11 @@ public class CoinGame {
                 + (tenPence * tenP) + (twentyPence * twentyP)
                 + (fiftyPence * fiftyP) + (onePound * onePnd));
 
-        if(total == 100){
+        if(total == targetTotal){
             System.out.println("You WIN! Total is " + total + " pence");
         }
         else{
-            difference = total - 100;
+            difference = total - targetTotal;
             if(difference > 0){
                 System.out.println("You LOSE! You are " + difference + " pence over");
             }
