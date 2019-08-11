@@ -68,7 +68,12 @@ we know the charge per minute over plan use, 0.25
     public static double doCalculation(double amount, double rate){
         /*
         calculate the multiplication, round to 2 decimal places
+        most currencies have two decimals so this would suffice as
+        a generic rounding rule, but if you want this to work for
+        JPY/CHF you would have to adapt for specific currency
+        based rules
          */
+
         double result = amount * rate;
         double roundedResult = Math.round(result * 100.0) / 100.0;
         return roundedResult;
