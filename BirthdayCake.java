@@ -4,6 +4,12 @@ public class BirthdayCake extends Cake {
 
     protected Integer numberOfCandles;
 
+    public BirthdayCake() {
+        super("Vanilla Sponge");
+        setNumberOfCandles(1);
+        setPrice(3.5 + getNumberOfCandles()*0.35);
+    }
+
     public BirthdayCake(String flavour, Integer candles) {
         super(flavour);
         setNumberOfCandles(candles);

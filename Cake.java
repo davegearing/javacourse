@@ -5,6 +5,10 @@ public class Cake {
     protected String flavour;
     protected double price;
 
+    public Cake(){
+        setFlavour("Vanilla Sponge");
+        setPrice(3);
+    }
     public Cake(String flavour) {
         setFlavour(flavour);
         setPrice(3);
