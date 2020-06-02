@@ -49,7 +49,7 @@ public class CoinTossGame {
             System.out.println(player1.getName() + " choose heads or tails ");
             String yourGuess = scanner.next();
             yourGuess = yourGuess.toUpperCase();
-            System.out.println("you guessed " + yourGuess);
+            System.out.println(player1.getName() + " you guessed " + yourGuess);
 
             if (yourGuess.equals("HEADS")){
                 getGuess = false;
