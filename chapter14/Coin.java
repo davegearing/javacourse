@@ -10,23 +10,23 @@ import java.util.Random;
  */
 public class Coin {
 
-    static final String HEADS = "HEADS";
-    static final String TAILS = "TAILS";
+    public static final String HEADS = "HEADS";
+    public static final String TAILS = "TAILS";
 
     private String side;
-    
+
     /**
-     * flip the coin 
+     * flip the coin
      * @return the side
      */
-    public static void flip() {
+    public static void flip(Coin coin) {
         Random random = new Random ();
         int rvalue = random.nextInt(100);
         if (rvalue<50){
-            setSide(HEADS);
+            coin.setSide(HEADS);
         }
         else{
-            setSide(TAILS);
+            coin.setSide(TAILS);
         }
     }
 
@@ -34,15 +34,14 @@ public class Coin {
      * @return the side
      */
     public String getSide() {
-        this.flip();
         return side;
     }
 
     /**
      * @param side the side to set
      */
-    public void setSide(String theside) {
-        this.side = theside;
+    public void setSide(String side) {
+        this.side = side;
     }
-    
+
 }

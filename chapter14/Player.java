@@ -10,7 +10,7 @@ public class Player {
 
     private String name;
     private String guess;
-    
+
     public Player(String playername){
         if(playername != ""){
             setName(playername);
@@ -47,6 +47,7 @@ public class Player {
     public void setGuess(String guess) {
         this.guess = guess;
     }
-    
-    
+
+
 }
+
